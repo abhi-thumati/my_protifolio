@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Abhi Thumati | Computer Science Student & Aspiring Software Developer</title>
+  <meta name="description" content="Personal portfolio of Abhi Thumati, a Computer Science Engineering student and aspiring software developer. Showcasing projects like Chess Bot, Clg Connect, and Task Management System.">
+  <meta name="keywords" content="Abhi Thumati, Software Developer, Portfolio, Computer Science Student, Chess Bot, Clg Connect, Task Management, Web Developer, Coding Profiles">
+  <meta name="author" content="Abhi Thumati">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abhi Thumati | Portfolio">
+  <meta property="og:description" content="Explore the portfolio of Abhi Thumati, highlighting engineering skills, software projects, and technical accomplishments.">
+  <meta property="og:url" content="https://abhithumati.dev">
+  <meta property="og:image" content="assets/portfolio-preview.jpg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Particle Background Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation Header -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="#hero" class="logo" id="nav-logo">
+        <div class="logo-icon">A</div>
+        <span>Abhi Thumati</span>
+      </a>
+      
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-content">
+        <div class="hero-tagline">Welcome to my Digital Space</div>
+        <h1 class="hero-title">
+          <span>Hi, I'm</span>
+          <span class="text-gradient-cyan-purple">Abhi Thumati</span>
+        </h1>
+        
+        <div class="typing-container">
+          <span class="typed-text" id="typed-text"></span>
+        </div>
+        
+        <p class="hero-description">
+          A passionate Computer Science Engineering student focused on building robust, high-performance software, intelligent systems, and seamless web experiences.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="hero-glow-orb"></div>
+        <!-- Premium Interactive Developer SVG Illustration -->
+        <svg class="hero-svg-container" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Central Desktop/Laptop Mockup -->
+          <rect x="110" y="240" width="280" height="170" rx="12" fill="#1e293b" stroke="#334155" stroke-width="4"/>
+          <rect x="120" y="250" width="260" height="130" rx="6" fill="#0f172a"/>
+          
+          <!-- Code Editor Elements inside Screen -->
+          <rect x="135" y="265" width="60" height="8" rx="4" fill="#a855f7" opacity="0.8"/>
+          <rect x="135" y="280" width="120" height="8" rx="4" fill="#3b82f6" opacity="0.6"/>
+          <rect x="150" y="295" width="90" height="8" rx="4" fill="#06b6d4" opacity="0.7"/>
+          <rect x="150" y="310" width="110" height="8" rx="4" fill="#10b981" opacity="0.8"/>
+          <rect x="135" y="325" width="45" height="8" rx="4" fill="#f59e0b" opacity="0.8"/>
+          <circle cx="140" cy="258" r="3" fill="#ef4444"/>
+          <circle cx="148" cy="258" r="3" fill="#f59e0b"/>
+          <circle cx="156" cy="258" r="3" fill="#10b981"/>
+          
+          <!-- Screen glow -->
+          <rect x="120" y="250" width="260" height="130" rx="6" fill="url(#screenGlow)" opacity="0.15"/>
+          
+          <!-- Laptop Stand and Base -->
+          <path d="M220 410 L280 410 L290 430 L210 430 Z" fill="#334155"/>
+          <rect x="180" y="430" width="140" height="8" rx="4" fill="#475569"/>
+
+          <!-- Floating Elements (representing projects and skills) -->
+          
+          <!-- Floating Element 1: Chess Bot (Chess Knight/Piece) -->
+          <g class="svg-float-1">
+            <circle cx="90" cy="150" r="35" fill="#0f172a" stroke="#a855f7" stroke-width="2" filter="url(#glowPurple)"/>
+            <!-- Chess Knight Path -->
+            <path d="M82 165 C82 165 76 150 78 142 C80 134 88 132 94 135 C97 132 101 133 103 137 C103 137 107 141 101 149 C98 153 98 158 100 162 L102 165 Z" fill="#a855f7"/>
+            <rect x="78" y="165" width="24" height="4" rx="2" fill="#a855f7"/>
+          </g>
+          
+          <!-- Floating Element 2: Clg Connect (Database/Network nodes) -->
+          <g class="svg-float-2">
+            <circle cx="410" cy="180" r="40" fill="#0f172a" stroke="#06b6d4" stroke-width="2" filter="url(#glowCyan)"/>
+            <!-- Network Node Paths -->
+            <circle cx="410" cy="165" r="5" fill="#06b6d4"/>
+            <circle cx="395" cy="185" r="5" fill="#06b6d4"/>
+            <circle cx="425" cy="185" r="5" fill="#06b6d4"/>
+            <line x1="410" y1="165" x2="395" y2="185" stroke="#06b6d4" stroke-width="1.5"/>
+            <line x1="410" y1="165" x2="425" y2="185" stroke="#06b6d4" stroke-width="1.5"/>
+            <line x1="395" y1="185" x2="425" y2="185" stroke="#06b6d4" stroke-width="1.5"/>
+          </g>
+          
+          <!-- Floating Element 3: Task Management (Kanban/Checklist) -->
+          <g class="svg-float-3">
+            <circle cx="250" cy="90" r="30" fill="#0f172a" stroke="#3b82f6" stroke-width="2" filter="url(#glowBlue)"/>
+            <!-- Checklist ticks -->
+            <path d="M242 90 L247 95 L258 84" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="250" cy="90" r="12" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3 3" fill="none"/>
+          </g>
+
+          <!-- Floating Code Brackets and Tech Symbols -->
+          <g class="svg-float-1" style="animation-delay: 1s;">
+            <text x="50" y="300" fill="#6b7280" font-family="monospace" font-size="28" font-weight="bold">&lt;/&gt;</text>
+          </g>
+          <g class="svg-float-2" style="animation-delay: 1.5s;">
+            <text x="400" y="320" fill="#6b7280" font-family="monospace" font-size="36" font-weight="bold">{ }</text>
+          </g>
+          <g class="svg-float-3" style="animation-delay: 2s;">
+            <text x="320" y="140" fill="#10b981" font-family="monospace" font-size="22" font-weight="bold">const</text>
+          </g>
+
+          <!-- Connecting Glow Lines -->
+          <path d="M125 150 Q180 150 220 100" stroke="#a855f7" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+          <path d="M280 100 Q330 180 370 180" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+          <path d="M115 175 Q150 250 170 250" stroke="#a855f7" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+          <path d="M385 205 Q350 270 330 250" stroke="#06b6d4" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+
+          <!-- Definitions of Gradients and Filters -->
+          <defs>
+            <radialGradient id="screenGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#3b82f6"/>
+              <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+            </radialGradient>
+            
+            <filter id="glowPurple" x="-10" y="-10" width="70" height="70" filterUnits="userSpaceOnUse">
+              <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#a855f7" flood-opacity="0.5"/>
+            </filter>
+            
+            <filter id="glowCyan" x="-10" y="-10" width="80" height="80" filterUnits="userSpaceOnUse">
+              <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#06b6d4" flood-opacity="0.5"/>
+            </filter>
+            
+            <filter id="glowBlue" x="-10" y="-10" width="60" height="60" filterUnits="userSpaceOnUse">
+              <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#3b82f6" flood-opacity="0.5"/>
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="reveal">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">A glimpse into my background, core values, and what drives my journey in technology.</p>
+      </div>
+      
+      <div class="about-grid">
+        <div class="glass-panel about-card glow-card" style="--glow-color: var(--accent-purple); --glow-color-rgb: var(--accent-purple-rgb);">
+          <div class="about-avatar-container">
+            <div class="about-avatar">
+              <!-- Developer SVG avatar icon -->
+              <svg viewBox="0 0 24 24">
+                <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/>
+              </svg>
+            </div>
+          </div>
+          <h3>Abhi Thumati</h3>
+          <p style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.9rem; margin-top: 5px;">B.Tech CSE Student</p>
+          
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-val">8.33</span>
+              <span class="stat-lbl">CGPA</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-val">3+</span>
+              <span class="stat-lbl">Key Projects</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-text">
+          <h3>Engineering the future with code</h3>
+          <p>
+            I am a Computer Science Engineering student with a robust academic foundation and a hands-on approach to problem-solving. My passion lies in analyzing complex challenges, modeling software architectures, and translating designs into reliable, scalable applications.
+          </p>
+          <p>
+            Throughout my coursework and personal exploration, I have developed a deep appreciation for systems programming, web engineering, and algorithms. I strive to combine computational efficiency with clean UI designs to deliver remarkable software solutions.
+          </p>
+          
+          <div class="quick-facts">
+            <div class="fact-item">
+              <div class="fact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="fact-details">
+                <span class="fact-title">Location</span>
+                <span class="fact-desc">Vijayawada, India</span>
+              </div>
+            </div>
+            
+            <div class="fact-item">
+              <div class="fact-icon" style="color: var(--accent-cyan); background: rgba(6, 182, 212, 0.1); border-color: rgba(6, 182, 212, 0.2);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              </div>
+              <div class="fact-details">
+                <span class="fact-title">Education Focus</span>
+                <span class="fact-desc">CS & Engineering</span>
+              </div>
+            </div>
+            
+            <div class="fact-item">
+              <div class="fact-icon" style="color: var(--accent-emerald); background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.2);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              </div>
+              <div class="fact-details">
+                <span class="fact-title">Expected Graduation</span>
+                <span class="fact-desc">2027</span>
+              </div>
+            </div>
+            
+            <div class="fact-item">
+              <div class="fact-icon" style="color: var(--accent-blue); background: rgba(59, 130, 246, 0.1); border-color: rgba(59, 130, 246, 0.2);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 22"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </div>
+              <div class="fact-details">
+                <span class="fact-title">Primary Interest</span>
+                <span class="fact-desc">Software Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="reveal">
+      <div class="section-header">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">My academic trajectory and learning achievements in Computer Science.</p>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-panel timeline-card glow-card" style="--glow-color: var(--accent-purple); --glow-color-rgb: var(--accent-purple-rgb);">
+            <span class="timeline-date">2023 - 2027 (Expected)</span>
+            <h3 class="timeline-title">B.Tech in Computer Science and Engineering</h3>
+            <p class="timeline-institution">Leading Engineering College / University</p>
+            <ul class="timeline-highlights">
+              <li>Current Cumulative Grade Point Average: <strong>8.33 CGPA</strong></li>
+              <li>Core Focus Areas: Data Structures, Algorithms, Systems Design, Database Management, Computer Networks, and Operating Systems</li>
+              <li>Active participant in competitive programming challenges and college technical symposia</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot" style="border-color: var(--accent-cyan); box-shadow: 0 0 10px rgba(6, 182, 212, 0.5);"></div>
+          <div class="glass-panel timeline-card glow-card" style="--glow-color: var(--accent-cyan); --glow-color-rgb: var(--accent-cyan-rgb);">
+            <span class="timeline-date">2021 - 2023</span>
+            <h3 class="timeline-title">Intermediate (Class XII) - MPC</h3>
+            <p class="timeline-institution">Junior College / Pre-University Institution</p>
+            <ul class="timeline-highlights">
+              <li>Specialized in Mathematics, Physics, and Chemistry (MPC)</li>
+              <li>Acquired strong mathematical foundational knowledge in Calculus, Algebra, and Probability</li>
+              <li>Graduated with honors / top-tier percentage</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="reveal">
+      <div class="section-header">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">A breakdown of my technical proficiencies and tooling competencies.</p>
+      </div>
+      
+      <div class="skills-grid">
+        <!-- Programming Languages -->
+        <div class="glass-panel skills-card glow-card" style="--glow-color: var(--accent-blue); --glow-color-rgb: var(--accent-blue-rgb);">
+          <h3 class="skills-card-title">
+            <svg class="skills-card-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            Languages
+          </h3>
+          
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Python</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar" data-percent="85%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Java</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar" data-percent="75%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">JavaScript (ES6+)</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar" data-percent="80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">C++</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar" data-percent="70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Web Development -->
+        <div class="glass-panel skills-card glow-card" style="--glow-color: var(--accent-cyan); --glow-color-rgb: var(--accent-cyan-rgb);">
+          <h3 class="skills-card-title">
+            <svg class="skills-card-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            Web Engineering
+          </h3>
+          
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Node.js / Express</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar" data-percent="75%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML5 / CSS3</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar" data-percent="90%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">RESTful APIs</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar" data-percent="80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">WebSockets (Socket.io)</span>
+                <span class="skill-pct">65%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar" data-percent="65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases & Tools -->
+        <div class="glass-panel skills-card glow-card" style="--glow-color: var(--accent-purple); --glow-color-rgb: var(--accent-purple-rgb);">
+          <h3 class="skills-card-title">
+            <svg class="skills-card-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
+            Databases & Tools
+          </h3>
+          
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">MongoDB / SQL</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar" data-percent="80%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Git & GitHub</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar" data-percent="85%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Linux / CLI</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar" data-percent="70%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">VS Code / JetBrains IDEs</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar" data-percent="90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Supplementary Technical Keywords -->
+      <div class="skills-tags" style="justify-content: center; margin-top: 50px;">
+        <span class="badge badge-purple">Data Structures & Algorithms</span>
+        <span class="badge badge-cyan">Object-Oriented Programming (OOPs)</span>
+        <span class="badge badge-purple">Software Engineering</span>
+        <span class="badge badge-cyan">Database Management Systems</span>
+        <span class="badge badge-purple">Computer Networks</span>
+        <span class="badge badge-cyan">Operating Systems</span>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="reveal">
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">A showcase of systems and software applications I have built.</p>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Chess Bot Project -->
+        <div class="glass-panel project-card glow-card" style="--glow-color: var(--accent-purple); --glow-color-rgb: var(--accent-purple-rgb);">
+          <div class="project-visual">
+            <div class="project-gradient-overlay"></div>
+            <div class="project-mockup">
+              <!-- Custom Visual Chess Grid SVG -->
+              <svg width="250" height="180" viewBox="0 0 250 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Glowing Chess Board Backdrop -->
+                <rect x="55" y="20" width="140" height="140" rx="8" fill="#1e1b4b" stroke="#a855f7" stroke-width="2" opacity="0.8"/>
+                <path d="M55 55 H195 M55 90 H195 M55 125 H195 M90 20 V160 M125 20 V160 M160 20 V160" stroke="#4c1d95" stroke-width="1.5"/>
+                <!-- Alternating tiles (highlighted pattern) -->
+                <rect x="55" y="20" width="35" height="35" rx="2" fill="#701a75" opacity="0.3"/>
+                <rect x="125" y="20" width="35" height="35" rx="2" fill="#701a75" opacity="0.3"/>
+                <rect x="90" y="55" width="35" height="35" rx="2" fill="#701a75" opacity="0.3"/>
+                <rect x="160" y="55" width="35" height="35" rx="2" fill="#701a75" opacity="0.3"/>
+                <rect x="55" y="90" width="35" height="35" rx="2" fill="#701a75" opacity="0.3"/>
+                <rect x="125" y="90" width="35" height="35" rx="2" fill="#701a75" opacity="0.3"/>
+                <!-- Glowing AI Move Target -->
+                <rect x="125" y="90" width="35" height="35" stroke="#a855f7" stroke-width="2.5" fill="none" filter="url(#glowPurple)"/>
+                <circle cx="142.5" cy="107.5" r="4" fill="#a855f7"/>
+                
+                <!-- Chess Knight Piece in Center -->
+                <g transform="translate(108, 38)">
+                  <path d="M12 29 C12 29 6 16 8 9 C10 2 17 0 23 3 C26 0 30 1 32 5 C32 5 36 9 30 16 C27 20 27 25 29 29 L31 32 Z" fill="#e9d5ff"/>
+                  <rect x="8" y="32" width="24" height="4" rx="2" fill="#e9d5ff"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="badge badge-purple">Python</span>
+              <span class="badge">Minimax Algorithm</span>
+              <span class="badge">Pygame</span>
+              <span class="badge">AI Evaluation</span>
+            </div>
+            <h3 class="project-title">Chess Bot</h3>
+            <p class="project-description">
+              An artificial intelligence chess playing engine built in Python. Implements the Minimax searching algorithm with Alpha-Beta pruning, evaluation tables, and heuristics for position scoring. Developed a responsive graphical user interface using Pygame, allowing users to play against various difficulty levels of the computer.
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                Code base
+              </a>
+              <a href="#" class="project-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Clg Connect Project -->
+        <div class="glass-panel project-card glow-card" style="--glow-color: var(--accent-cyan); --glow-color-rgb: var(--accent-cyan-rgb);">
+          <div class="project-visual">
+            <div class="project-gradient-overlay"></div>
+            <div class="project-mockup">
+              <!-- Custom Social Node Hub SVG -->
+              <svg width="250" height="180" viewBox="0 0 250 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Group nodes representing students -->
+                <circle cx="125" cy="90" r="28" fill="#083344" stroke="#06b6d4" stroke-width="2" filter="url(#glowCyan)"/>
+                <circle cx="65" cy="55" r="18" fill="#0f172a" stroke="#0891b2" stroke-width="1.5"/>
+                <circle cx="185" cy="55" r="18" fill="#0f172a" stroke="#0891b2" stroke-width="1.5"/>
+                <circle cx="75" cy="130" r="18" fill="#0f172a" stroke="#0891b2" stroke-width="1.5"/>
+                <circle cx="175" cy="130" r="18" fill="#0f172a" stroke="#0891b2" stroke-width="1.5"/>
+                
+                <!-- Connecting Links -->
+                <line x1="125" y1="90" x2="65" y2="55" stroke="#0891b2" stroke-width="1.5" stroke-dasharray="3 3"/>
+                <line x1="125" y1="90" x2="185" y2="55" stroke="#0891b2" stroke-width="1.5" stroke-dasharray="3 3"/>
+                <line x1="125" y1="90" x2="75" y2="130" stroke="#0891b2" stroke-width="1.5" stroke-dasharray="3 3"/>
+                <line x1="125" y1="90" x2="175" y2="130" stroke="#0891b2" stroke-width="1.5" stroke-dasharray="3 3"/>
+                <line x1="65" y1="55" x2="185" y2="55" stroke="#0891b2" stroke-width="1" opacity="0.5"/>
+                <line x1="75" y1="130" x2="175" y2="130" stroke="#0891b2" stroke-width="1" opacity="0.5"/>
+
+                <!-- Message Icons inside nodes -->
+                <rect x="117" y="84" width="16" height="12" rx="3" fill="#06b6d4"/>
+                <path d="M121 96 L125 99 L129 96" stroke="#083344" stroke-width="1.5" fill="none"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="badge badge-cyan">Node.js</span>
+              <span class="badge">Express</span>
+              <span class="badge">MongoDB</span>
+              <span class="badge">Socket.io</span>
+            </div>
+            <h3 class="project-title">Clg Connect</h3>
+            <p class="project-description">
+              A comprehensive web communication and networking portal engineered for university campus student interaction. Built a collaborative feed system where students share academic resources, query-discussion forums, and announce campus developments. Built a low-latency real-time group and direct chat service powered by WebSockets.
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                Code base
+              </a>
+              <a href="#" class="project-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Task Management System Project -->
+        <div class="glass-panel project-card glow-card" style="--glow-color: var(--accent-blue); --glow-color-rgb: var(--accent-blue-rgb);">
+          <div class="project-visual">
+            <div class="project-gradient-overlay"></div>
+            <div class="project-mockup">
+              <!-- Custom Visual Kanban Board SVG -->
+              <svg width="250" height="180" viewBox="0 0 250 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Outer Layout Columns -->
+                <rect x="30" y="25" width="55" height="130" rx="6" fill="#1e293b" opacity="0.6"/>
+                <rect x="97" y="25" width="56" height="130" rx="6" fill="#1e293b" opacity="0.6"/>
+                <rect x="165" y="25" width="55" height="130" rx="6" fill="#1e293b" opacity="0.6"/>
+                
+                <!-- Column Headers -->
+                <rect x="35" y="32" width="25" height="6" rx="3" fill="#ef4444" opacity="0.8"/>
+                <rect x="102" y="32" width="30" height="6" rx="3" fill="#3b82f6" opacity="0.8"/>
+                <rect x="170" y="32" width="20" height="6" rx="3" fill="#10b981" opacity="0.8"/>
+                
+                <!-- Cards inside Kanban columns -->
+                <rect x="35" y="48" width="45" height="24" rx="4" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+                <rect x="40" y="54" width="30" height="4" rx="2" fill="#6b7280"/>
+                
+                <!-- Active glowing moving task card -->
+                <rect x="102" y="48" width="46" height="30" rx="4" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5" filter="url(#glowBlue)"/>
+                <rect x="108" y="55" width="32" height="4" rx="2" fill="#3b82f6"/>
+                <circle cx="138" cy="67" r="4" fill="#3b82f6"/>
+                
+                <rect x="170" y="48" width="45" height="20" rx="4" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+                <rect x="175" y="54" width="25" height="4" rx="2" fill="#6b7280"/>
+                
+                <rect x="102" y="88" width="46" height="20" rx="4" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="badge badge-blue">JavaScript</span>
+              <span class="badge">CSS3</span>
+              <span class="badge">HTML5</span>
+              <span class="badge">LocalStorage</span>
+            </div>
+            <h3 class="project-title">Task Management System</h3>
+            <p class="project-description">
+              A collaborative workspace and Kanban dashboard application designed to coordinate dev-team workloads. Allows users to create work units, assign tasks, prioritize tickets, and track progress timelines. Employs client-side data persistence mechanisms (LocalStorage) to ensure smooth session recovery.
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                Code base
+              </a>
+              <a href="#" class="project-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="reveal">
+      <div class="section-header">
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">Professional credentials and specialized technical achievements.</p>
+      </div>
+      
+      <div class="certs-grid">
+        <!-- Certification 1 -->
+        <div class="glass-panel cert-card glow-card" style="--glow-color: var(--accent-cyan); --glow-color-rgb: var(--accent-cyan-rgb);">
+          <div class="cert-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-title">Data Structures and Algorithms in Python</h3>
+            <p class="cert-issuer">Coursera / Industry Credential</p>
+            <span class="cert-date">Issued: Jan 2025</span>
+          </div>
+        </div>
+        
+        <!-- Certification 2 -->
+        <div class="glass-panel cert-card glow-card" style="--glow-color: var(--accent-purple); --glow-color-rgb: var(--accent-purple-rgb);">
+          <div class="cert-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-title">Full Stack Web Engineering Foundations</h3>
+            <p class="cert-issuer">Udemy / Development Certificate</p>
+            <span class="cert-date">Issued: Oct 2024</span>
+          </div>
+        </div>
+
+        <!-- Certification 3 -->
+        <div class="glass-panel cert-card glow-card" style="--glow-color: var(--accent-blue); --glow-color-rgb: var(--accent-blue-rgb);">
+          <div class="cert-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-title">Introduction to Cybersecurity & Databases</h3>
+            <p class="cert-issuer">Google Career Certificates</p>
+            <span class="cert-date">Issued: Jun 2024</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coding Profiles & Social Connect Section -->
+    <section id="profiles" class="reveal">
+      <div class="section-header">
+        <h2 class="section-title">Coding Profiles & Links</h2>
+        <p class="section-subtitle">Connect with me on social media or check out my coding benchmarks.</p>
+      </div>
+      
+      <div class="profiles-grid">
+        <!-- LinkedIn Profile Card -->
+        <div class="glass-panel profile-card glow-card" style="--glow-color: #0a66c2; --glow-color-rgb: 10, 102, 194;">
+          <div class="profile-icon" style="background: rgba(10, 102, 194, 0.1); color: #0a66c2;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </div>
+          <h3 class="profile-name">LinkedIn</h3>
+          <p class="profile-desc">Professional network & updates</p>
+          <a href="https://linkedin.com" target="_blank" class="profile-btn">Connect</a>
+        </div>
+        
+        <!-- GitHub Profile Card -->
+        <div class="glass-panel profile-card glow-card" style="--glow-color: #f3f4f6; --glow-color-rgb: 243, 244, 246;">
+          <div class="profile-icon" style="background: rgba(255, 255, 255, 0.05); color: #f3f4f6;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </div>
+          <h3 class="profile-name">GitHub</h3>
+          <p class="profile-desc">Open-source repositories & logic</p>
+          <a href="https://github.com" target="_blank" class="profile-btn">Explore</a>
+        </div>
+
+        <!-- LeetCode Profile Card -->
+        <div class="glass-panel profile-card glow-card" style="--glow-color: #ffa116; --glow-color-rgb: 255, 161, 22;">
+          <div class="profile-icon" style="background: rgba(255, 161, 22, 0.1); color: #ffa116;">
+            <!-- Custom LeetCode SVG Icon representation -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2 L2 7 L12 12 L22 7 Z"/>
+              <path d="M2 17 L12 22 L22 17"/>
+              <path d="M2 12 L12 17 L22 12"/>
+            </svg>
+          </div>
+          <h3 class="profile-name">LeetCode</h3>
+          <p class="profile-desc">Competitive programming solutions</p>
+          <a href="https://leetcode.com" target="_blank" class="profile-btn">View Stats</a>
+        </div>
+
+        <!-- GeeksforGeeks Profile Card -->
+        <div class="glass-panel profile-card glow-card" style="--glow-color: #2f8d46; --glow-color-rgb: 47, 141, 70;">
+          <div class="profile-icon" style="background: rgba(47, 141, 70, 0.1); color: #2f8d46;">
+            <!-- Custom GfG SVG representation -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+              <line x1="9" y1="9" x2="15" y2="9"/>
+              <line x1="9" y1="13" x2="13" y2="13"/>
+            </svg>
+          </div>
+          <h3 class="profile-name">GeeksforGeeks</h3>
+          <p class="profile-desc">Data structures & practice logs</p>
+          <a href="https://geeksforgeeks.org" target="_blank" class="profile-btn">Check Out</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="reveal">
+      <div class="section-header">
+        <h2 class="section-title">Resume</h2>
+        <p class="section-subtitle">A summaries overview of my credentials and an option to export my document.</p>
+      </div>
+      
+      <div class="resume-section-wrapper">
+        <div class="glass-panel resume-preview-card">
+          <div class="resume-preview-header">
+            <div class="resume-meta">
+              <h3>Abhi Thumati</h3>
+              <p>Vijayawada, India | Computer Science Student</p>
+            </div>
+            <!-- Download Button -->
+            <a href="assets/Abhi_Thumati_Resume.pdf" download class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download Full Resume</span>
+            </a>
+          </div>
+          
+          <div class="resume-preview-body">
+            <!-- Left Column: Core Focus / Contact -->
+            <div class="resume-column">
+              <div class="resume-subblock">
+                <h4 class="resume-subblock-title">Education</h4>
+                <div class="resume-subblock-item">
+                  <div class="resume-subblock-heading">B.Tech in CSE</div>
+                  <div class="resume-subblock-subheading">Expected Graduation: 2027</div>
+                  <div class="resume-subblock-desc">Cumulative CGPA: 8.33</div>
+                </div>
+              </div>
+              
+              <div class="resume-subblock">
+                <h4 class="resume-subblock-title">Key Coursework</h4>
+                <div class="resume-subblock-item">
+                  <div class="resume-subblock-desc">• Data Structures & Algorithms</div>
+                  <div class="resume-subblock-desc">• Database Management Systems</div>
+                  <div class="resume-subblock-desc">• Object-Oriented Programming</div>
+                  <div class="resume-subblock-desc">• Computer Networks & OS</div>
+                </div>
+              </div>
+              
+              <div class="resume-subblock">
+                <h4 class="resume-subblock-title">Skills Overview</h4>
+                <div class="resume-subblock-item">
+                  <div class="resume-subblock-heading">Languages:</div>
+                  <div class="resume-subblock-desc">Python, Java, JavaScript, C++, SQL</div>
+                  <div class="resume-subblock-heading" style="margin-top: 10px;">Development:</div>
+                  <div class="resume-subblock-desc">Node.js, Express, MongoDB, Git</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Right Column: Projects -->
+            <div class="resume-column">
+              <div class="resume-subblock">
+                <h4 class="resume-subblock-title">Featured Project Work</h4>
+                
+                <div class="resume-subblock-item">
+                  <div class="resume-subblock-heading">Chess Bot (Python, Pygame)</div>
+                  <div class="resume-subblock-desc">
+                    Developed a chess engine utilizing the Minimax algorithm, Alpha-Beta pruning optimization, and custom heuristics. Structured a graphical board UI mapping interactive components.
+                  </div>
+                </div>
+                
+                <div class="resume-subblock-item" style="margin-top: 15px;">
+                  <div class="resume-subblock-heading">Clg Connect (Node.js, Express, Socket.io, MongoDB)</div>
+                  <div class="resume-subblock-desc">
+                    Built a university collaboration tool enabling real-time community chats via WebSockets, file sharing, announcements feeds, and authorization systems.
+                  </div>
+                </div>
+
+                <div class="resume-subblock-item" style="margin-top: 15px;">
+                  <div class="resume-subblock-heading">Task Management Board (JavaScript, HTML, CSS)</div>
+                  <div class="resume-subblock-desc">
+                    Constructed a Kanban client system managing tasks and team sprint targets. Integrated user state retention using window storage capabilities.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+      <div class="section-header">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">Have a question or want to discuss a project? Drop a message below!</p>
+      </div>
+      
+      <div class="contact-grid">
+        <!-- Contact Information Info Cards -->
+        <div class="contact-info-list">
+          <div class="glass-panel contact-info-item glow-card" style="--glow-color: var(--accent-cyan); --glow-color-rgb: var(--accent-cyan-rgb);">
+            <div class="contact-info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div class="contact-info-details">
+              <span class="contact-info-title">Email</span>
+              <span class="contact-info-val"><a href="mailto:abhi.thumati@example.com">abhi.thumati@example.com</a></span>
+            </div>
+          </div>
+          
+          <div class="glass-panel contact-info-item glow-card" style="--glow-color: var(--accent-purple); --glow-color-rgb: var(--accent-purple-rgb);">
+            <div class="contact-info-icon" style="color: var(--accent-purple); background: rgba(168, 85, 247, 0.1); border-color: rgba(168, 85, 247, 0.2);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="contact-info-details">
+              <span class="contact-info-title">Location</span>
+              <span class="contact-info-val">Hyderabad, Telangana, India</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Glassmorphic Contact Form -->
+        <div class="glass-panel contact-form-card">
+          <form id="contact-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Full Name</label>
+                <input type="text" id="form-name" class="form-control" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email Address</label>
+                <input type="email" id="form-email" class="form-control" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="form-group form-group-full" style="margin-bottom: 20px;">
+              <label for="form-subject" class="form-label">Subject</label>
+              <input type="text" id="form-subject" class="form-control" placeholder="Project collaboration / Inquiry" required>
+            </div>
+            <div class="form-group form-group-full" style="margin-bottom: 25px;">
+              <label for="form-message" class="form-label">Message</label>
+              <textarea id="form-message" class="form-control" placeholder="Hi Abhi, I'd love to connect regarding..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" id="form-submit-btn">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+            
+            <div class="form-status" id="form-status-msg"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        Abhi<span>Thumati</span>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 Abhi Thumati. Engineered from scratch. All rights reserved.
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com" target="_blank" class="footer-social-link" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="footer-social-link" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
